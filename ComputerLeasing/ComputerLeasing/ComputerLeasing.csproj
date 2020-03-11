@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46F18128-1280-4820-94B6-E9F34D4C52FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComputerLeasing</RootNamespace>
+    <AssemblyName>ComputerLeasing</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ComputerLeasing.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComputerLeasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComputerLeasing.Designer.cs">
+      <DependentUpon>ComputerLeasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl_ContractMaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl_ContractMaster.Designer.cs">
+      <DependentUpon>Ctrl_ContractMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl_H.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl_H.Designer.cs">
+      <DependentUpon>Ctrl_H.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl_OwnerHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl_OwnerHistory.Designer.cs">
+      <DependentUpon>Ctrl_OwnerHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl_PrintReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl_PrintReport.Designer.cs">
+      <DependentUpon>Ctrl_PrintReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl_SerialNoMaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl_SerialNoMaster.Designer.cs">
+      <DependentUpon>Ctrl_SerialNoMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detail.Designer.cs">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchUserName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchUserName.Designer.cs">
+      <DependentUpon>SearchUserName.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComputerLeasing.resx">
+      <DependentUpon>ComputerLeasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl_ContractMaster.resx">
+      <DependentUpon>Ctrl_ContractMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl_H.resx">
+      <DependentUpon>Ctrl_H.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl_OwnerHistory.resx">
+      <DependentUpon>Ctrl_OwnerHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl_PrintReport.resx">
+      <DependentUpon>Ctrl_PrintReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl_SerialNoMaster.resx">
+      <DependentUpon>Ctrl_SerialNoMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detail.resx">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchUserName.resx">
+      <DependentUpon>SearchUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
